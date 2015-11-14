@@ -37,12 +37,12 @@ genes = []
 for line in inputfile:
     if "WB" not in line:
         Null = "Null"
-    else:
+    elif "WB" in line:
         split_string = line.split("\t")
-        if line[2] not in geneseen:
-            gs = line[2]
+        if split_string[2] not in geneseen:
+            gs = split_string[2]
             geneseen.append(gs)
-            genes.append(line[2]+",")
+            genes.append(gs+",")
             print (genes)
         else:
             genes.append(line[3]+","+line[4]+","+line[6])
