@@ -6,8 +6,8 @@ Created on 23 Oct 2015
 import sys
 import codecs
 inputfile = open('./phenotype_association.WS250.wb', mode='r')
-loutputfile = open('./Lethal_Genes.txt', mode='w')
-voutputfile = open('./Viable_Genes.txt', mode='w')
+outputfile = open('./Genes.txt', mode='w')
+
 
 Lethality = ("WBPhenotype:0000050", "WBPhenotype:0000060", "WBPhenotype:0000054", "WBPhenotype:0000057", "WBPhenotype:0000117", "WBPhenotype:0000118", "WBPhenotype:0000058", \
              "WBPhenotype:0000419", "WBPhenotype:0001003", "WBPhenotype:0000116", "WBPhenotype:0000411", "WBPhenotype:0000052", "WBPhenotype:0000053", "WBPhenotype:0000351", \
@@ -34,39 +34,49 @@ Lethality = ("WBPhenotype:0000050", "WBPhenotype:0000060", "WBPhenotype:0000054"
 
 geneseen = []
 genes = []
+data = {}
 for line in inputfile:
+
     if "WB" not in line:
         Null = "Null"
     elif "WB" in line:
+
         split_string = line.split("\t")
-        if split_string[2] not in geneseen:
-            gs = split_string[2]
-            geneseen.append(gs)
-            genes.append(gs+",")
-            print (genes)
-        else:
-            genes.append(line[3]+","+line[4]+","+line[6])
-            print (line[3]+","+line[4]+","+line[6])
-            sys.exit("Stopped")
+        gene = split_string[2]
+        negation = split_string[3]
+        phenotype = split_string[4]
 
-
-            gene = split_string[2]
-            viableNotation = split_string[3]
-            lethalityPhenotype = split_string[4]
-            data [gene] = data.get(gene,"")+viableNotation.rstrip('\r\n')+","+lethalityPhenotype+","
-
-            for x in data:
-                loutputfile.write(x+","+data[x]+"\n")
+        data[gene] = data.get(gene,"")+negation+","+phenotype+","
 
 
 
 
-        if any(l in line for l in Lethality):
 
 
-                loutputfile.write(line)
-        else:
-            voutputfile.write(line)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+for x in data:
+    outputfile.write(x+","+data[x]+"\n")
+
+sys.exit("stopped")
+
+
 loutputfile.close()
 voutputfile.close()
 
