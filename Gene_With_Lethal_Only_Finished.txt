@@ -303,7 +303,6 @@ mir-359,lethal
 mir-67,lethal
 mir-63,lethal
 21ur-14536,lethal
-F21H12.7,lethal
 21ur-12283,lethal
 F16A11.6,lethal
 adp-1,lethal
@@ -332,6 +331,7 @@ B0286.9,lethal
 B0286.8,lethal
 clk-7,lethal
 clk-9,lethal
+F21H12.7,lethal
 F54D5.16,lethal
 unc-20,lethal
 egl-14,lethal
@@ -560,6 +560,7 @@ dmo-1,lethal
 21ur-13077,lethal
 mir-239.1,lethal
 ins-8,lethal
+W02G9.t1,lethal
 atp-4,lethal
 K04C2.t3,lethal
 T02B11.8,lethal
@@ -670,7 +671,6 @@ dpy-25,lethal
 21ur-6516,lethal
 21ur-3742,lethal
 F10B5.2,lethal
-W02G9.t1,lethal
 21ur-8022,lethal
 patr-1,lethal
 rgr-1,lethal

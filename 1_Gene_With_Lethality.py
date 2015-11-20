@@ -126,7 +126,7 @@ for line in inputfile:
             Leth = Leth+1
     print N
     print Leth
-    if N == Leth: # IF NOT == number of lethal phenotypes - this needs work
+    if N == Leth: 
         with open('./Gene_With_Viable_Only.txt', 'a') as file:
             file.write(line)
         print "Turned Into Viable"
@@ -160,7 +160,26 @@ voutputfile.close()
 loutputfile.close()
 
 
-#
+vinputfile = open('./Gene_With_Viable_Only_Finished.txt', mode='r')
+linputfile = open('./Gene_With_Lethal_Only_Finished.txt', mode='r')
+goutputfile = open('./Single_Lethality_Genes.txt', mode='w')
+
+for line in vinputfile:
+    goutputfile.write(line)
+for line in linputfile:
+    goutputfile.write(line)
+
+vinputfile.close()
+linputfile.close()
+goutputfile.close()
+
+
+
+
+
+
+
+
 # ldata = {}
 # vdata = {}
 #

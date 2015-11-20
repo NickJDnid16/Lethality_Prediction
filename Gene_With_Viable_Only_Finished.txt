@@ -19,7 +19,6 @@ let-320,viable
 let-321,viable
 Y95D11A.3,viable
 nspa-11,viable
-C17H1.13,viable
 AC3.14,viable
 his-62,viable
 copa-1,viable
@@ -35,6 +34,7 @@ dgtr-1,viable
 sld-5,viable
 lrp-1,viable
 stu-8,viable
+cbs-1,viable
 T10A3.5,viable
 T10A3.2,viable
 rol-9,viable
@@ -122,6 +122,7 @@ let-164,viable
 D1054.17,viable
 let-388,viable
 let-387,viable
+let-480,viable
 F43G9.15,viable
 fab-1,viable
 fab-3,viable
@@ -161,6 +162,7 @@ let-145,viable
 F17C11.15,viable
 K07C11.12,viable
 K07C11.11,viable
+let-473,viable
 let-852,viable
 let-853,viable
 let-854,viable
@@ -297,7 +299,6 @@ dec-1,viable
 K11G9.12,viable
 K11G9.11,viable
 can-1,viable
-emb-19,viable
 srsx-23,viable
 sup-30,viable
 sup-38,viable
@@ -321,7 +322,6 @@ col-168,viable
 eif-3.C,viable
 rpl-25.2,viable
 rax-6,viable
-T27C10.8,viable
 Y75B12B.11,viable
 rnr-1,viable
 mum-1,viable
@@ -330,7 +330,6 @@ mum-2,viable
 yars-1,viable
 pun-1,viable
 srpa-68,viable
-cbs-1,viable
 let-208,viable
 let-759,viable
 let-758,viable
@@ -371,7 +370,6 @@ let-778,viable
 let-771,viable
 let-774,viable
 let-481,viable
-let-480,viable
 elb-1,viable
 xpo-2,viable
 E04A4.5,viable
@@ -398,6 +396,7 @@ let-540,viable
 let-541,viable
 cct-7,viable
 K01G5.12,viable
+T27C10.8,viable
 ngp-1,viable
 let-713,viable
 let-715,viable
@@ -547,6 +546,7 @@ emb-21,viable
 emb-20,viable
 emb-23,viable
 emb-28,viable
+C17H1.13,viable
 B0250.7,viable
 let-139,viable
 let-138,viable
@@ -568,11 +568,13 @@ let-356,viable
 pas-4,viable
 Y55F3BL.6,viable
 ehn-2,viable
+K09H11.10,viable
 T06A10.2,viable
 W06D4.t1,viable
 F26E4.14,viable
 M162.15,viable
 gon-11,viable
+hsp-2,viable
 vha-2,viable
 perm-5,viable
 vha-8,viable
@@ -686,6 +688,7 @@ dopy-3,viable
 skn-4,viable
 21ur-14885,viable
 mcm-7,viable
+emb-19,viable
 ama-2,viable
 ali-1,viable
 21ur-12336,viable
@@ -716,7 +719,6 @@ let-476,viable
 let-474,viable
 let-475,viable
 let-472,viable
-let-473,viable
 let-470,viable
 let-471,viable
 ric-1,viable
@@ -735,7 +737,6 @@ let-662,viable
 let-660,viable
 let-664,viable
 Y77E11A.23,viable
-hsp-2,viable
 eat-13,viable
 sec-61,viable
 perm-1,viable
@@ -760,7 +761,6 @@ let-415,viable
 let-416,viable
 let-417,viable
 M176.15,viable
-K09H11.10,viable
 rpl-7A,viable
 nuo-4,viable
 let-86,viable
@@ -1154,8 +1154,6 @@ K08E5.4,viable
 lir-1,viable
 lrr-1,viable
 tbx-33,viable
-cytb-5.2,viable
-ears-1,viable
 pas-1,viable
 etr-1,viable
 ceh-27,viable
@@ -1267,7 +1265,6 @@ his-61,viable
 hmgs-1,viable
 eftu-2,viable
 rab-5,viable
-bir-1,viable
 aspm-1,viable
 apc-2,viable
 cct-4,viable
@@ -1398,6 +1395,7 @@ dhc-1,viable
 tsr-1,viable
 ruvb-1,viable
 ruvb-2,viable
+ears-1,viable
 lin-66,viable
 rpn-3,viable
 rpn-1,viable
@@ -1503,6 +1501,7 @@ snap-29,viable
 hmgr-1,viable
 spdl-1,viable
 cls-2,viable
+bir-1,viable
 cap-2,viable
 vps-4,viable
 eif-3.H,viable
@@ -1571,6 +1570,7 @@ puf-3,viable
 pap-1,viable
 C15F1.14,viable
 figl-1,viable
+cytb-5.2,viable
 prp-38,viable
 rbpl-1,viable
 prp-31,viable
