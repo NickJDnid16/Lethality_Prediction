@@ -1,17 +1,10 @@
 from datetime import datetime
-#from graphviz.dot import Dot
-from configglue.inischema.parsers import lines
+
 startTime = datetime.now()
 
-#Unicode Characters from text file
-import codecs
 
-import json
-import re 
-from pprint import pprint
 from datetime import datetime
-#from graphviz.dot import Dot
-from configglue.inischema.parsers import lines
+
 startTime = datetime.now()
 
 #Unicode Characters from text file
@@ -24,27 +17,19 @@ import sys
 sys.path.append('..')
 sys.path.append('/usr/lib/graphviz/python/')
 sys.path.append('/usr/lib64/graphviz/python/')
-#import gv
 
-# Import pygraph
-
-from pygraph.classes.graph import graph
 from pygraph.classes.digraph import digraph
-from pygraph.algorithms.searching import breadth_first_search
-#from pygraph.readwrite.dot import write
 
 
-# Graph creation
-#graph [ overlap=false ].
 gr = digraph()
 count = 0
 
 #Input
-GraphInput = codecs.open('/home/nid16/workspace/Project_With_New_Data/Refined_GO_Nodes.txt', encoding='utf-8', mode='r')
+GraphInput = codecs.open('./Refined_GO_Nodes.txt', encoding='utf-8', mode='r')
 
-EdgesInput = codecs.open('/home/nid16/workspace/Project_With_New_Data/GO_Children&Parents.txt', encoding='utf-8', mode='r')
+EdgesInput = codecs.open('./GO_Children&Parents.txt', encoding='utf-8', mode='r')
 
-with open('/home/nid16/workspace/Project_With_New_Data/GO_Children&Parents.txt') as json_file:
+with open('./GO_Children&Parents.txt') as json_file:
     json_data = json.load(json_file)
     #print(json_data, "\n")
     
@@ -81,7 +66,7 @@ counter = 0
 
 count = 0
        
-with open('/home/nid16/workspace/Project_With_New_Data/Refined_GO_Nodes.txt') as input:
+with open('./Refined_GO_Nodes.txt') as input:
 
             tempVec = []
             BinVec = []
@@ -133,10 +118,10 @@ def Duplicates(Up):
 
 debug = 0
 #outputfile = open('/home/mint/git/prediction-of-Lethality-in-Fly-Mutants-using-Machine-Learning/Workspace/Lethality Extraction/Vector.txt')
-data = open('/home/nid16/workspace/Project_With_New_Data/Fixed_Gene&GO_F.txt')
-outputfile = open('/home/nid16/workspace/Project_With_New_Data/BinVec.txt', mode = 'w')
-OutMissing = open('/home/nid16/workspace/Project_With_New_Data/Missing.txt', mode = 'w')
-OutParents = open('/home/nid16/workspace/Project_With_New_Data/Parents.txt', mode = 'w')
+data = open('./Fixed_Gene&GO_F.txt')
+outputfile = open('./BinVec.txt', mode = 'w')
+OutMissing = open('./Missing.txt', mode = 'w')
+OutParents = open('./Parents.txt', mode = 'w')
 for line in data:
     debug = debug+1
     csv = line.split(",")
