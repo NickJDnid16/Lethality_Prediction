@@ -6,11 +6,11 @@ Created on 26 Oct 2015
 
 import codecs
 
-output = codecs.open('/home/nid16/workspace/Project_With_New_Data/Gene_ARFF.txt', encoding='utf-8', mode='w')
+output = codecs.open('./Gene_ARFF.txt', encoding='utf-8', mode='w')
 
 line = 0
 
-for BinLine in codecs.open('/home/nid16/workspace/Project_With_New_Data/Lethality&Vector.txt', encoding='utf-8', mode='r'):
+for BinLine in codecs.open('./Lethality&Vector.txt', encoding='utf-8', mode='r'):
     line = line+1
     print(line)
     csv = BinLine.split(",")

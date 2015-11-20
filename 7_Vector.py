@@ -1,11 +1,5 @@
-from datetime import datetime
-
-startTime = datetime.now()
 
 
-from datetime import datetime
-
-startTime = datetime.now()
 
 #Unicode Characters from text file
 import codecs
@@ -118,7 +112,7 @@ def Duplicates(Up):
 
 debug = 0
 #outputfile = open('/home/mint/git/prediction-of-Lethality-in-Fly-Mutants-using-Machine-Learning/Workspace/Lethality Extraction/Vector.txt')
-data = open('./Fixed_Gene&GO_F.txt')
+data = open('./Gene&GO_F.txt')
 outputfile = open('./BinVec.txt', mode = 'w')
 OutMissing = open('./Missing.txt', mode = 'w')
 OutParents = open('./Parents.txt', mode = 'w')
@@ -257,4 +251,4 @@ for key in Missing:
     OutMissing.write(str(Missing))
     OutMissing.write('\n')
     
-print(datetime.now()-startTime)              
+#print(datetime.now()-startTime)

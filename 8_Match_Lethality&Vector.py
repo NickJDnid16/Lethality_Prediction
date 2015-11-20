@@ -11,10 +11,10 @@ from datetime import datetime
 
 startTime = datetime.now()
 
-OutPut = codecs.open('/home/nid16/workspace/Project_With_New_Data/Lethality&Vector.txt', encoding='utf-8', mode='w')
+OutPut = codecs.open('./Lethality&Vector.txt', encoding='utf-8', mode='w')
 
 lines = 0
-for BinLine in codecs.open('/home/nid16/workspace/Project_With_New_Data/BinVec.txt',encoding='utf-8', mode='r'):
+for BinLine in codecs.open('./BinVec.txt',encoding='utf-8', mode='r'):
     csv = BinLine.split(",")
 
     Gene = csv[0]
@@ -22,7 +22,7 @@ for BinLine in codecs.open('/home/nid16/workspace/Project_With_New_Data/BinVec.t
     
     lines = lines +1
     
-    line = linecache.getline('/home/nid16/workspace/Project_With_New_Data/Fixed_Gene&GO_F.txt', lines)
+    line = linecache.getline('./Gene&GO_F.txt', lines)
     count = 0
     
     if "GO" in line:
