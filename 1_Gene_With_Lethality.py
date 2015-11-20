@@ -48,33 +48,9 @@ for line in inputfile:
 
         data[gene] = data.get(gene,"")+negation+","+phenotype+","
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 for x in data:
     outputfile.write(x+","+data[x]+"\n")
 
-#sys.exit("stopped")
 
 outputfile.close()
 inputfile.close()
@@ -175,62 +151,3 @@ goutputfile.close()
 
 
 
-
-
-
-
-
-# ldata = {}
-# vdata = {}
-#
-# linputfile = open('./Lethal_Genes.txt', mode='r')
-# vinputfile = open('./Viable_Genes.txt', mode='r')
-# loutputfile = open('./Lethal_Genes_With_Phenotype.txt', mode='w')
-# voutputfile = open('./Viable_Genes_With_Phenotype.txt', mode='w')
-#
-# for line in linputfile:
-#     split_string = line.split("\t")
-#     gene = split_string[2]
-#     viableNotation = split_string[3]
-#     lethalityPhenotype = split_string[4]
-#     ldata [gene] = ldata.get(gene,"")+viableNotation.rstrip('\r\n')+","+lethalityPhenotype+","
-#
-# for x in ldata:
-#     loutputfile.write(x+","+data[x]+"\n")
-#
-# for line in vinputfile:
-#     split_string = line.split("\t")
-#     gene = split_string[2]
-#     viableNotation = split_string[3]
-#     lethalityPhenotype = split_string[4]
-#     vdata [gene] = vdata.get(gene,"")+viableNotation.rstrip('\r\n')+","+lethalityPhenotype+","
-#
-# for x in vdata:
-#     voutputfile.write(x+","+vdata[x]+"\n")
-#
-#
-#
-#
-#
-#
-#
-#
-#
-# linputfile.close()
-# loutputfile.close()
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#

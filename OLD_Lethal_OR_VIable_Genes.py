@@ -57,7 +57,7 @@ linputfile = open('./Gene_With_Viable_Only.txt', mode='r')
 lethal = []
 viable = []
 
-sys.exit("Stopped")
+#sys.exit("Stopped")
 for line in inputfile:
     N = line.count(NOT)
     W = line.count(WB)

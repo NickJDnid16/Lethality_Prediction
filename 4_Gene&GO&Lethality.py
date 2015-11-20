@@ -53,7 +53,7 @@ for x in data:
     outputfile.write(x+","+data[x]+"\n")
 
 outputfile.close()
-sys.exit("Stopped")
+#sys.exit("Stopped")
 #inputfile.close()
 
 inputfile = open('./Temp_Gene&GO_F.txt', mode='r')
