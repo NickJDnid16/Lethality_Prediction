@@ -144,7 +144,7 @@ for line in NodesInput:
         Nodes_Seen.add(line)
 
 NodesOutput.close()
-
+print len(Nodes_Seen)
 
 
 

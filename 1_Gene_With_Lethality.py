@@ -116,7 +116,14 @@ for line in inputfile:
         with open('./Gene_With_Viable_Only.txt', 'a') as file:
             file.write(line)
         print "Turned Into Viable"
-    
+    elif Leth > 1 and N == 0:
+        with open('./Gene_With_Lethal_Only.txt', 'a') as file:
+            file.write(line)
+        print "Turned Into Lethal"
+    elif N > Leth:
+        with open('./Gene_With_Viable_Only.txt', 'a') as file:
+            file.write(line)
+        print "Turned Into Viable"
     else:
         out.write(line)
 
