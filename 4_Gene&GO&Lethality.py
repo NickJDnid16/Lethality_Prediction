@@ -53,16 +53,12 @@ for x in data:
     outputfile.write(x+","+data[x]+"\n")
 
 outputfile.close()
-#sys.exit("Stopped")
-#inputfile.close()
+
 
 inputfile = open('./Temp_Gene&GO_F.txt', mode='r')
 outputfile = open('./Gene&GO_F.txt', mode='w')
 fOutputfile = open('./Filtered.txt', mode='w')
 
-#viable = raw_input("viable")
-#lethal = raw_input("lethal")
-#GO = "GO"
 
 for line in inputfile:
     if "GO" not in line:# or "lethal" not in line:

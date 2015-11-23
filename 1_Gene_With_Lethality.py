@@ -96,6 +96,7 @@ out = open('./Stuff.txt', mode='w')
 for line in inputfile:
     N = line.count("NOT")
     Leth = 0
+    Phenotype = line.count("WB")
     split_string = line.split(",")
     for element in split_string:
         if element in Lethality:
@@ -111,6 +112,11 @@ for line in inputfile:
         with open('./Gene_With_Lethal_Only.txt', 'a') as file:
             file.write(line)
         print "Turned Into Lethal"
+    elif N == Phenotype and N != Leth:
+        with open('./Gene_With_Viable_Only.txt', 'a') as file:
+            file.write(line)
+        print "Turned Into Viable"
+    
     else:
         out.write(line)
 
