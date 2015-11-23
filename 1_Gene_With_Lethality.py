@@ -85,8 +85,8 @@ inputfile.close()
 #########################################################################################
 
 inputfile = open('./Gene_With_Both_L&V.txt', mode='r')
-vinputfile = open('./Gene_With_Lethal_Only.txt', mode='r')
-linputfile = open('./Gene_With_Viable_Only.txt', mode='r')
+vinputfile = open('./Gene_With_Viable_Only.txt', mode='r')
+linputfile = open('./Gene_With_Lethal_Only.txt', mode='r')
 
 lethal = []
 viable = []

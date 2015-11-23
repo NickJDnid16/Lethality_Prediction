@@ -4,17 +4,11 @@
     <list default="true" id="6df85fff-ba65-48ca-b1bc-028357e31d8d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/1_Gene_With_Lethality.py" afterPath="$PROJECT_DIR$/1_Gene_With_Lethality.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2_OBO.py" afterPath="$PROJECT_DIR$/2_OBO.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Filtered.txt" afterPath="$PROJECT_DIR$/Filtered.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GO_Children&amp;Parents.txt" afterPath="$PROJECT_DIR$/GO_Children&amp;Parents.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GO_Nodes.txt" afterPath="$PROJECT_DIR$/GO_Nodes.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gene&amp;GO_F.txt" afterPath="$PROJECT_DIR$/Gene&amp;GO_F.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gene_With_Lethal_Only_Finished.txt" afterPath="$PROJECT_DIR$/Gene_With_Lethal_Only_Finished.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gene_With_Viable_Only.txt" afterPath="$PROJECT_DIR$/Gene_With_Viable_Only.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ontology_Attributes" afterPath="$PROJECT_DIR$/Ontology_Attributes" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Refined_GO_Nodes.txt" afterPath="$PROJECT_DIR$/Refined_GO_Nodes.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gene_With_Viable_Only_Finished.txt" afterPath="$PROJECT_DIR$/Gene_With_Viable_Only_Finished.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Single_Lethality_Genes.txt" afterPath="$PROJECT_DIR$/Single_Lethality_Genes.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Stuff.txt" afterPath="$PROJECT_DIR$/Stuff.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Temp_Gene&amp;GO_F.txt" afterPath="$PROJECT_DIR$/Temp_Gene&amp;GO_F.txt" />
     </list>
     <ignored path="Lethality_Prediction.iws" />
@@ -35,7 +29,18 @@
     <favorites_list name="Lethality_Prediction" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="6_Match_Lethality&amp;Vector.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/6_Match_Lethality&amp;Vector.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.59850377">
+              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
@@ -51,15 +56,14 @@
         <option value="$PROJECT_DIR$/2_Lethal_OR_VIable_Genes.py" />
         <option value="$PROJECT_DIR$/4_Gene&amp;GO&amp;Lethality.py" />
         <option value="$PROJECT_DIR$/Gene_With_Both_L&amp;V.txt" />
-        <option value="$PROJECT_DIR$/1_Gene_With_Lethality.py" />
         <option value="$PROJECT_DIR$/2_OBO.py" />
+        <option value="$PROJECT_DIR$/1_Gene_With_Lethality.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
-    <option name="width" value="1922" />
-    <option name="height" value="950" />
+    <option name="width" value="1366" />
+    <option name="height" value="743" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -86,6 +90,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -106,8 +112,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -115,24 +119,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Python.5_Vector">
-    <configuration default="false" name="1_Gene_With_Lethality" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Lethality_Prediction" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1_Gene_With_Lethality.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.6_Match_Lethality&amp;Vector">
     <configuration default="false" name="2_OBO" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -146,23 +133,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Lethality_Prediction" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2_OBO.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="3_Ontology_Attribute" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Lethality_Prediction" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/3_Ontology_Attribute.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -197,6 +167,40 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Lethality_Prediction" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/5_Vector.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="6_Match_Lethality&amp;Vector" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Lethality_Prediction" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/6_Match_Lethality&amp;Vector.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="7_ARFF_Generator" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Lethality_Prediction" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/7_ARFF_Generator.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -324,19 +328,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.1_Gene_With_Lethality" />
-      <item index="1" class="java.lang.String" itemvalue="Python.2_OBO" />
-      <item index="2" class="java.lang.String" itemvalue="Python.3_Ontology_Attribute" />
-      <item index="3" class="java.lang.String" itemvalue="Python.4_Gene&amp;GO&amp;Lethality" />
-      <item index="4" class="java.lang.String" itemvalue="Python.5_Vector" />
+      <item index="0" class="java.lang.String" itemvalue="Python.2_OBO" />
+      <item index="1" class="java.lang.String" itemvalue="Python.4_Gene&amp;GO&amp;Lethality" />
+      <item index="2" class="java.lang.String" itemvalue="Python.5_Vector" />
+      <item index="3" class="java.lang.String" itemvalue="Python.6_Match_Lethality&amp;Vector" />
+      <item index="4" class="java.lang.String" itemvalue="Python.7_ARFF_Generator" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.5_Vector" />
-        <item index="1" class="java.lang.String" itemvalue="Python.4_Gene&amp;GO&amp;Lethality" />
-        <item index="2" class="java.lang.String" itemvalue="Python.3_Ontology_Attribute" />
-        <item index="3" class="java.lang.String" itemvalue="Python.2_OBO" />
-        <item index="4" class="java.lang.String" itemvalue="Python.1_Gene_With_Lethality" />
+        <item index="0" class="java.lang.String" itemvalue="Python.7_ARFF_Generator" />
+        <item index="1" class="java.lang.String" itemvalue="Python.6_Match_Lethality&amp;Vector" />
+        <item index="2" class="java.lang.String" itemvalue="Python.5_Vector" />
+        <item index="3" class="java.lang.String" itemvalue="Python.4_Gene&amp;GO&amp;Lethality" />
+        <item index="4" class="java.lang.String" itemvalue="Python.2_OBO" />
       </list>
     </recent_temporary>
   </component>
@@ -354,16 +358,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="0" width="1922" height="950" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="0" width="1366" height="743" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12916666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16348973" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3995272" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3286052" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32707354" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -392,7 +396,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/1_Gene_With_Lethality.py</url>
-          <line>104</line>
+          <line>93</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
@@ -548,13 +552,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gene_With_Viable_Only_Finished.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gene_With_Lethal_Only_Finished.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-32.229218">
@@ -580,13 +577,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13659" column="26" selection-start-line="13659" selection-start-column="26" selection-end-line="13659" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gene&amp;GO_F.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5792079">
-          <caret line="1019" column="38" selection-start-line="1019" selection-start-column="38" selection-end-line="1019" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -618,19 +608,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1_Gene_With_Lethality.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.28942487">
-          <caret line="125" column="34" selection-start-line="125" selection-start-column="34" selection-end-line="125" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gene_With_Both_L&amp;V.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -638,23 +619,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gene_With_Viable_Only.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="202.13307">
-          <caret line="19740" column="0" selection-start-line="19740" selection-start-column="0" selection-end-line="19740" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gene_With_Lethal_Only.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7773655">
-          <caret line="1652" column="36" selection-start-line="1652" selection-start-column="36" selection-end-line="1652" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -663,9 +627,46 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Lethality&amp;Vector.txt">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gene_With_Viable_Only.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.0357144">
+          <caret line="19740" column="0" selection-start-line="19740" selection-start-column="0" selection-end-line="19740" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gene_With_Lethal_Only.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1652" column="36" selection-start-line="1652" selection-start-column="36" selection-end-line="1652" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gene_With_Viable_Only_Finished.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1_Gene_With_Lethality.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="88" column="37" selection-start-line="88" selection-start-column="37" selection-end-line="88" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/2_OBO.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7513915">
+        <state vertical-scroll-proportion="0.0">
           <caret line="146" column="20" selection-start-line="146" selection-start-column="20" selection-end-line="146" selection-end-column="20" />
           <folding />
         </state>
@@ -673,7 +674,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/3_Ontology_Attribute.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58441556">
+        <state vertical-scroll-proportion="0.0">
           <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
           <folding />
         </state>
@@ -681,8 +682,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/4_Gene&amp;GO&amp;Lethality.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.70686454">
+        <state vertical-scroll-proportion="0.0">
           <caret line="64" column="15" selection-start-line="64" selection-start-column="15" selection-end-line="64" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gene&amp;GO_F.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3915212">
+          <caret line="25" column="539" selection-start-line="25" selection-start-column="533" selection-end-line="25" selection-end-column="539" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5_Vector.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.52369076">
+          <caret line="119" column="19" selection-start-line="119" selection-start-column="19" selection-end-line="119" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/6_Match_Lethality&amp;Vector.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.59850377">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
           <folding />
         </state>
       </provider>
