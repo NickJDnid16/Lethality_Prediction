@@ -74,7 +74,10 @@ for line in inputfile:
         else:
             vOutputfile.write(line)
     elif NOT not in line:
-        lOutputfile.write(line)
+        if any(l in line for l in Lethality):
+            lOutputfile.write(line)
+        else:
+            vOutputfile.write(line)
 #sys.exit("Stopped")
 
 vOutputfile.close()
@@ -103,35 +106,35 @@ for line in inputfile:
             Leth = Leth+1
     print N
     print Leth
-    if N == Leth: 
-        with open('./Gene_With_Viable_Only.txt', 'a') as file:
-            file.write(line)
-        print "Turned Into Viable"
-
-    elif N < Leth:
-        with open('./Gene_With_Lethal_Only.txt', 'a') as file:
-            file.write(line)
-        print "Turned Into Lethal"
-    elif N == Phenotype and N != Leth:
-        with open('./Gene_With_Viable_Only.txt', 'a') as file:
-            file.write(line)
-        print "Turned Into Viable"
-    elif Leth > 1 and N == 0:
-        with open('./Gene_With_Lethal_Only.txt', 'a') as file:
-            file.write(line)
-        print "Turned Into Lethal"
-    elif N > Leth:
-        with open('./Gene_With_Viable_Only.txt', 'a') as file:
-            file.write(line)
-        print "Turned Into Viable"
-    else:
-        out.write(line)
+    # if N == Leth:
+    #     with open('./Gene_With_Viable_Only.txt', 'a') as file:
+    #         file.write(line)
+    #     print "Turned Into Viable"
+    #
+    # elif N < Leth:
+    #     with open('./Gene_With_Lethal_Only.txt', 'a') as file:
+    #         file.write(line)
+    #     print "Turned Into Lethal"
+    # elif N == Phenotype and N != Leth:
+    #     with open('./Gene_With_Viable_Only.txt', 'a') as file:
+    #         file.write(line)
+    #     print "Turned Into Viable"
+    # elif Leth > 1 and N == 0:
+    #     with open('./Gene_With_Lethal_Only.txt', 'a') as file:
+    #         file.write(line)
+    #     print "Turned Into Lethal"
+    # elif N > Leth:
+    #     with open('./Gene_With_Viable_Only.txt', 'a') as file:
+    #         file.write(line)
+    #     print "Turned Into Viable"
+    # else:
+    #     out.write(line)
 
 inputfile.close()
 
 voutputfile = open('./Gene_With_Viable_Only_Finished.txt', mode='w')
 loutputfile = open('./Gene_With_Lethal_Only_Finished.txt', mode='w')
-
+#sys.exit("stopped")
 
 for line in vinputfile:
     line_split = line.split(",")
