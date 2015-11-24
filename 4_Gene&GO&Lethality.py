@@ -22,14 +22,14 @@ singleLethality = open('./Single_Lethality_Genes.txt', mode='w')
 
 #SPLIT LINES AND CHECK WHETHER THE GENE IS THE SAME FROM BOTH FILES
 
-for line in open('./Gene_With_Lethal_Only_Finished.txt', mode='r'):
+for line in open('./Gene_With_Lethal_Only_Temp.txt', mode='r'):
     print line
     split_lines = line.split(',')
     lines_seen.append(line[0])
     if split_lines[0] not in lines_seen:
         singleLethality.write(line)
 
-for line in open('./Gene_With_Viable_Only_Finished.txt', mode='r'):
+for line in open('./Gene_With_Viable_Only_Temp.txt', mode='r'):
     split_lines = line.split(',')
     lines_seen.append(line[0])
     if split_lines[0] not in lines_seen:
@@ -59,9 +59,9 @@ inputfile = open('./Temp_Gene&GO_F.txt', mode='r')
 outputfile = open('./Gene&GO_F.txt', mode='w')
 fOutputfile = open('./Filtered.txt', mode='w')
 
-
+GO = "GO:"
 for line in inputfile:
-    if "GO" not in line:# or "lethal" not in line:
+    if "GO:" not in line:# or "lethal" not in line:
         fOutputfile.write(line)
     elif "viable" not in line and "lethal" not in line:
         fOutputfile.write(line)
