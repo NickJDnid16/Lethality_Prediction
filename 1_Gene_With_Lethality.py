@@ -132,8 +132,8 @@ for line in inputfile:
 
 inputfile.close()
 
-voutputfile = open('./Gene_With_Viable_Only_Finished.txt', mode='w')
-loutputfile = open('./Gene_With_Lethal_Only_Finished.txt', mode='w')
+voutputfile = open('./Gene_With_Viable_Only.txt', mode='w')
+loutputfile = open('./Gene_With_Lethal_Only.txt', mode='w')
 #sys.exit("stopped")
 
 for line in vinputfile:
@@ -152,8 +152,8 @@ voutputfile.close()
 loutputfile.close()
 
 
-vinputfile = open('./Gene_With_Viable_Only_Finished.txt', mode='r')
-linputfile = open('./Gene_With_Lethal_Only_Finished.txt', mode='r')
+vinputfile = open('./Gene_With_Viable_Only.txt', mode='r')
+linputfile = open('./Gene_With_Lethal_Only.txt', mode='r')
 goutputfile = open('./Single_Lethality_Genes.txt', mode='w')
 
 for line in vinputfile:
