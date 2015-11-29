@@ -1,0 +1,57 @@
+=== Run information ===
+
+Scheme:weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     Lethality-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    375
+Attributes:   41576
+[list of attributes omitted]
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+GO:0009790 = 1
+|   GO:0022414 = 1: viable (7.0)
+|   GO:0022414 = 0: lethal (196.0/2.0)
+GO:0009790 = 0
+|   GO:0042303 = 1: lethal (7.0)
+|   GO:0042303 = 0
+|   |   GO:0022618 = 1: lethal (2.0)
+|   |   GO:0022618 = 0
+|   |   |   GO:0009791 = 1: lethal (18.0/4.0)
+|   |   |   GO:0009791 = 0: viable (145.0/28.0)
+
+Number of Leaves  : 	6
+
+Size of the tree : 	11
+
+
+Time taken to build model: 2.73 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         336               89.6    %
+Incorrectly Classified Instances        39               10.4    %
+Kappa statistic                          0.7788
+Mean absolute error                      0.1591
+Root mean squared error                  0.2966
+Relative absolute error                 35.1021 %
+Root relative squared error             62.3123 %
+Total Number of Instances              375     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.878     0.069      0.96      0.878     0.917      0.888    lethal
+                 0.931     0.122      0.801     0.931     0.861      0.888    viable
+Weighted Avg.    0.896     0.088      0.905     0.896     0.898      0.888
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 215  30 |   a = lethal
+   9 121 |   b = viable
+
