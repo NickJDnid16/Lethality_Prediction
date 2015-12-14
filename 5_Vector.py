@@ -112,139 +112,138 @@ def Duplicates(Up):
 
 debug = 0
 #outputfile = open('/home/mint/git/prediction-of-Lethality-in-Fly-Mutants-using-Machine-Learning/Workspace/Lethality Extraction/Vector.txt')
-#data = open('./Gene&GO_F.txt') #with IMP
-data = open('./Gene&GO_F_No_IMP.txt') #without IMP
+#data = open('./Gene&GO_F.txt')#With IMP
+data = open('./Gene&GO_F_No_IMP.txt')#Without IMP
 outputfile = open('./BinVec.txt', mode = 'w')
 OutMissing = open('./Missing.txt', mode = 'w')
 OutParents = open('./Parents.txt', mode = 'w')
 for line in data:
-    if l in line != "\n":
-        debug = debug+1
-        csv = line.split(",")
-        Gene = csv[0]
-        print(csv[0])
+    debug = debug+1
+    csv = line.split(",")
+    Gene = csv[0]
+    print(csv[0])
 
-        Continue = True
+    Continue = True
 
-        for t in range(1,len(csv)):
-            if "GO" in csv [t]:
-                    print(csv[t])
+    for t in range(1,len(csv)):
+        if "GO" in csv [t]:
+                print(csv[t])
 
-                    temp = csv[t]
-                    temp = temp.replace(":","")
-                   # print ("Ancestors")
-                    #print(gr.incidents(temp))
-                    Ancestors = []
-                    #Ancestors.append(temp)
-                    Seen = []
-                    Up = []
-                    Up.append(temp)
+                temp = csv[t]
+                temp = temp.replace(":","")
+               # print ("Ancestors")
+                #print(gr.incidents(temp))
+                Ancestors = []
+                #Ancestors.append(temp)
+                Seen = []
+                Up = []
+                Up.append(temp)
 
+                try:
+                    Up.extend(gr.incidents(temp))
+                except (KeyError,ValueError):
+                    print("Missing")
                     try:
-                        Up.extend(gr.incidents(temp))
+                        Missing.index(gr.incidents(temp))
+                        print("Already Missing")
+                    except (KeyError,ValueError):
+                            try:
+                                Missing.append(gr.incidents(temp))
+                            except (KeyError,ValueError):
+                                Missing.append("Unable To Add Missing Value")
+
+
+                #Ancestors.extend(Up)
+                print("Up")
+
+                Nodes = []
+                while Continue == True:
+                    l = 0
+                    if  Incidents(Up) == False:
+                        #print("GO in Incidents")
+
+                        for node in Up:
+                                if node not in Nodes:
+                                    #if node != "GO0043089":
+                                        try:
+                                            Up.extend(gr.incidents(node))
+                                            l = l+1
+                                            if l == 1000000:
+                                                Up = Duplicates(Up)
+                                    #print("Parents Added")
+                                        except (KeyError,ValueError):
+                                            print("Error")
+                                            Nodes.append(node)
+                                    #print("Node Size")
+                                    #print(len(Nodes))
+
+
+                    else:
+                        Continue = False
+                        print("Root")
+
+
+
+                Ancestors.extend(Up)
+                print("Ancestors")
+                #print(Ancestors)
+                #print(vec)
+                ModifiedAncestors = []
+                NodesSeen = []
+                for node in Ancestors:
+                    if node not in NodesSeen: # not a duplicate
+                        ModifiedAncestors.append(node)
+                        NodesSeen.append(node)
+
+
+                del Ancestors [:]
+                for Node in ModifiedAncestors:
+
+                    #OutParents.write(Node)
+                    try:
+
+                        print(vec.index(Node))
+                        print("1233333333")
+                        BinVec[vec.index(Node)] = 1
+                    #Parents = gr.incidents(temp)
+
                     except (KeyError,ValueError):
                         print("Missing")
                         try:
-                            Missing.index(gr.incidents(temp))
+                            Missing.index(Node)
                             print("Already Missing")
                         except (KeyError,ValueError):
-                                try:
-                                    Missing.append(gr.incidents(temp))
-                                except (KeyError,ValueError):
-                                    Missing.append("Unable To Add Missing Value")
-
-
-                    #Ancestors.extend(Up)
-                    print("Up")
-
-                    Nodes = []
-                    while Continue == True:
-                        l = 0
-                        if  Incidents(Up) == False:
-                            #print("GO in Incidents")
-
-                            for node in Up:
-                                    if node not in Nodes:
-                                        #if node != "GO0043089":
-                                            try:
-                                                Up.extend(gr.incidents(node))
-                                                l = l+1
-                                                if l == 1000000:
-                                                    Up = Duplicates(Up)
-                                        #print("Parents Added")
-                                            except (KeyError,ValueError):
-                                                print("Error")
-                                                Nodes.append(node)
-                                        #print("Node Size")
-                                        #print(len(Nodes))
-
-
-                        else:
-                            Continue = False
-                            print("Root")
-
-
-
-                    Ancestors.extend(Up)
-                    print("Ancestors")
-                    #print(Ancestors)
-                    #print(vec)
-                    ModifiedAncestors = []
-                    NodesSeen = []
-                    for node in Ancestors:
-                        if node not in NodesSeen: # not a duplicate
-                            ModifiedAncestors.append(node)
-                            NodesSeen.append(node)
-
-
-                    del Ancestors [:]
-                    for Node in ModifiedAncestors:
-
-                        #OutParents.write(Node)
-                        try:
-
-                            print(vec.index(Node))
-                            print("1233333333")
-                            BinVec[vec.index(Node)] = 1
-                        #Parents = gr.incidents(temp)
-
-                        except (KeyError,ValueError):
-                            print("Missing")
-                            try:
-                                Missing.index(Node)
-                                print("Already Missing")
-                            except (KeyError,ValueError):
-                                    Missing.append(Node)
+                                Missing.append(Node)
 
 
 
 
 
-        outputfile.write(Gene)
-        outputfile.write(',')
+    outputfile.write(Gene)
+    outputfile.write(',')
 
-        for key in BinVec:
+    for key in BinVec:
 
-            outputfile.write(str(key))
-        outputfile.write('\n')
-
-
-        print(Gene,BinVec)
+        outputfile.write(str(key))
+    outputfile.write('\n')
 
 
+    print(Gene,BinVec)
 
 
-        for t in range(0,len(BinVec)):
-            BinVec[t] = 0
-        print("Loop")
-        try:
-            del Seen[:]
-            del Up[:]
-            del Ancestors[:]
-            del ModifiedAncestors[:]
-            del Nodes[:]
-        except NameError:
-            print "Wups"
+
+
+    for t in range(0,len(BinVec)):
+        BinVec[t] = 0
+    print("Loop")
+    try:
+        del Seen[:]
+        del Up[:]
+        del Ancestors[:]
+        del ModifiedAncestors[:]
+        del Nodes[:]
+    except NameError:
+        print "Wups"
  
  
 print("Missing")

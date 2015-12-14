@@ -22,7 +22,8 @@ for BinLine in codecs.open('./BinVec.txt',encoding='utf-8', mode='r'):
     
     lines = lines +1
     
-    line = linecache.getline('./Gene&GO_F.txt', lines)
+    #line = linecache.getline('./Gene&GO_F.txt', lines)#With IMP
+    line = linecache.getline('./Gene&GO_F_No_IMP.txt', lines)#Without IMP
     count = 0
     
     if "GO" in line:
