@@ -39,7 +39,7 @@ for line in inputfile:
 
     if "WB" not in line:
         Null = "Null"
-    elif "WB" in line:
+    elif "WB" in line or "FB" in line: #Detect WormBase or FlyBase Genes
 
         split_string = line.split("\t")
         gene = split_string[2]
@@ -94,6 +94,8 @@ linputfile = open('./Gene_With_Lethal_Only.txt', mode='r')
 lethal = []
 viable = []
 
+
+##########################This code can filter the Genes' Lethality
 #sys.exit("Stopped")
 # out = open('./Stuff.txt', mode='w')
 # for line in inputfile:

@@ -93,7 +93,7 @@ while 1:
 
 import json
 
-#print(terms, indent=4)
+
 # ^ugly
 outputfile = codecs.open('./GO_Children&Parents.txt', encoding='utf-8', mode='w')
 

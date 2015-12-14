@@ -26,7 +26,7 @@ for BinLine in codecs.open('./Lethality&Vector.txt', encoding='utf-8', mode='r')
     for each in csv[1]:
         output.write(sliced[int(sli):int(sl)])
         if "1" not in csv[1]:
-            print "Boooooo"
+            print "Bug"
         sl =sl+1
         sli = sli+1
         output.write(',')

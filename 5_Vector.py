@@ -4,13 +4,11 @@
 #Unicode Characters from text file
 import codecs
 import json
+
 import re 
 from pprint import pprint
-# Import graphviz
 import sys
-sys.path.append('..')
-sys.path.append('/usr/lib/graphviz/python/')
-sys.path.append('/usr/lib64/graphviz/python/')
+
 
 from pygraph.classes.digraph import digraph
 
@@ -28,7 +26,7 @@ with open('./GO_Children&Parents.txt') as json_file:
     #print(json_data, "\n")
     
     for key in json_data.keys():
-            ##print ("key:", key, " parents:",json_data[key]['p'], " children:",json_data[key]['c'])#("key:",key,"\n")
+            #print ("key:", key, " parents:",json_data[key]['p'], " children:",json_data[key]['c'])#("key:",key,"\n")
             node = key.replace(":","")
             gr.add_node(node)
             print ("Added ",node)
@@ -36,7 +34,7 @@ with open('./GO_Children&Parents.txt') as json_file:
     
     for key in json_data.keys():
             print (count)
-            ##print ("key:", key, " parents:",json_data[key]['p'], " children:",json_data[key]['c'])#("key:",key,"\n")
+            #print ("key:", key, " parents:",json_data[key]['p'], " children:",json_data[key]['c'])#("key:",key,"\n")
             node = key.replace(":","")
             #gr.add_node(node)
             for parent in json_data[key]['p']:
@@ -203,7 +201,7 @@ for line in data:
                     try:
 
                         print(vec.index(Node))
-                        print("1233333333")
+                        print("Bug")
                         BinVec[vec.index(Node)] = 1
                     #Parents = gr.incidents(temp)
 
@@ -252,4 +250,3 @@ for key in Missing:
     OutMissing.write(str(Missing))
     OutMissing.write('\n')
     
-#print(datetime.now()-startTime)

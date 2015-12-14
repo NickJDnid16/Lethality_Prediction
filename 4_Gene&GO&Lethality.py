@@ -18,7 +18,7 @@ lines_seen = []
 
 singleLethality = open('./Single_Lethality_Genes.txt', mode='w')
 
-#lines_seen.append(line)
+
 
 #SPLIT LINES AND CHECK WHETHER THE GENE IS THE SAME FROM BOTH FILES
 
